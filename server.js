@@ -31,8 +31,6 @@ app.post("/create-item", (req, res) => {
   res.json({ test: "succes" });
 });
 
-
-
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
 });
