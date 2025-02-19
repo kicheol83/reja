@@ -28,7 +28,8 @@
   align-items: center;
 
   margin-top: 2px;
-  background: #10db94;
+
+  background: rgba(230, 227, 227, 0.914);
 }
 
 .main_frame .left_frame {
