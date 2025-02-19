@@ -21,14 +21,17 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 // 2: Session
 
 // 3 => BCCR => Views code
-app.set("views", "views"); 
+app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing code
 app.post("/create-item", (req, res) => {
   console.log(req);
-  res.json({ test: "succes" }); 
+
+  res.json({ test: "succes" });
 });
+
+res.json({ test: "succes" });
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
