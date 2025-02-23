@@ -1,12 +1,19 @@
-console.log("TRAIN AREA");
-console.log("A TASK"); // A-TASK
+// console.log("TRAIN AREA");
+// console.log("A TASK"); // A-TASK
 
-function countLetter(count, word) {
-  const array = [...word].filter(views => (views === count)).length;
-  return array;
+// function countLetter(count, word) {
+//   const array = [...word].filter((views) => views === count).length;
+//   return array;
+// }
+
+// console.log(countLetter("a", "madagackar"));
+
+console.log("A TASK"); // B-TASK
+function countDigits(seconds) {
+  return [...seconds].filter((nrt) => Number(nrt)).length;
 }
 
-console.log(countLetter("a", "madagackar"));
+console.log(countDigits("dh2kf7i9fj09m3r"));
 
 // CALL BACK
 // console.log("Jack Ma maslahatlari");
