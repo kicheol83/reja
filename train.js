@@ -8,7 +8,7 @@
 
 // console.log(countLetter("a", "madagackar"));
 
-console.log("A TASK"); // B-TASK
+console.log("B TASK"); // B-TASK
 function countDigits(seconds) {
   return [...seconds].filter((nrt) => Number(nrt)).length;
 }
