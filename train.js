@@ -8,12 +8,49 @@
 
 // console.log(countLetter("a", "madagackar"));
 
-console.log("B TASK"); // B-TASK
-function countDigits(seconds) {
-  return [...seconds].filter((nrt) => Number(nrt)).length;
+// console.log("B TASK"); // B-TASK
+// function countDigits(seconds) {
+//   return [...seconds].filter((nrt) => Number(nrt)).length;
+// }
+
+// console.log(countDigits("dh2kf7i9fj09m3r"));
+const moment = require("moment");
+console.log("C TASK"); // C-TASK
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  Sotish(s) {
+    const time = moment().format("LTS");
+    if ((this.non -= s)) {
+      return `(${time}) => ${s}ta solidi ${this.non}ta non qoldi`;
+    } else s > this.non;
+    return "Sotuv mavjud emas";
+  }
+
+  Qabul(q) {
+    const time = moment().format("LTS");
+    if ((this.cola += q)) {
+      return `(${time}) => ${q}ta qoshildi ${this.cola}ga kopaydi`;
+    } else return "Qabul qilish mavjud emas";
+  }
+
+  Qoldiq() {
+    const time = moment().format("LTS");
+    console.log(
+      `(${time}) => ${this.non}ta non ${this.lagmon}ta lagmon ${this.cola}ta cola mavjud`
+    );
+  }
 }
 
-console.log(countDigits("dh2kf7i9fj09m3r"));
+const shop = new Shop(5, 6, 7);
+console.log(shop);
+console.log(shop.Sotish(3));
+console.log(shop.Qabul(2));
+shop.Qoldiq();
 
 // CALL BACK
 // console.log("Jack Ma maslahatlari");

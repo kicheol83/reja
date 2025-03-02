@@ -1,4 +1,4 @@
-// const { response } = require("../app");
+// const { response } = require("/app");
 
 console.log("FrontEnd JS ishga tushdi");
 
@@ -32,7 +32,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
   axios
     .post("/create-item", { reja: createField.value })
     .then((response) => {
-      document 
+      document
         .getElementById("item-list")
         .insertAdjacentHTML("beforeend", itemTemplate(response.data));
       createField.value = "";
@@ -41,4 +41,26 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     .catch((err) => {
       console.log("Iltimos qaytadan harakat qiling");
     });
+});
+
+document.addEventListener("click", function (e) {
+  //delete oper
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("Aniq ochirmoqsimisiz?")) {
+      axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => { 
+          console.log("Iltimos qaytadan harakat qiling");
+        });
+    }
+  }
+
+  // edit oper
+  if (e.target.classList.contains("edit-me")) {
+    alert("Siz edit tugmasini bosdingiz");
+  }
 });
