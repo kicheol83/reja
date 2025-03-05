@@ -54,7 +54,7 @@
 
 console.log("C TASK"); // D-TASK
 function checkContent(a, b) {
-  return a.split("").sort().join("") === b.split("").sort().join("");
+  return [...a].sort().join("") === [...b].sort().join("");
 }
 
 console.log(checkContent("mitgroup", "gmtiprou"));
