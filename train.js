@@ -14,44 +14,51 @@
 // }
 
 // console.log(countDigits("dh2kf7i9fj09m3r"));
-const moment = require("moment");
-console.log("C TASK"); // C-TASK
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// const moment = require("moment");
+// console.log("C TASK"); // C-TASK
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-  Sotish(s) {
-    const time = moment().format("LTS");
-    if ((this.non -= s)) {
-      return `(${time}) => ${s}ta solidi ${this.non}ta non qoldi`;
-    } else s > this.non;
-    return "Sotuv mavjud emas";
-  }
+//   Sotish(s) {
+//     const time = moment().format("LTS");
+//     if ((this.non -= s)) {
+//       return `(${time}) => ${s}ta solidi ${this.non}ta non qoldi`;
+//     } else s > this.non;
+//     return "Sotuv mavjud emas";
+//   }
 
-  Qabul(q) {
-    const time = moment().format("LTS");
-    if ((this.cola += q)) {
-      return `(${time}) => ${q}ta qoshildi ${this.cola}ga kopaydi`;
-    } else return "Qabul qilish mavjud emas";
-  }
+//   Qabul(q) {
+//     const time = moment().format("LTS");
+//     if ((this.cola += q)) {
+//       return `(${time}) => ${q}ta qoshildi ${this.cola}ga kopaydi`;
+//     } else return "Qabul qilish mavjud emas";
+//   }
 
-  Qoldiq() {
-    const time = moment().format("LTS");
-    console.log(
-      `(${time}) => ${this.non}ta non ${this.lagmon}ta lagmon ${this.cola}ta cola mavjud`
-    );
-  }
+//   Qoldiq() {
+//     const time = moment().format("LTS");
+//     console.log(
+//       `(${time}) => ${this.non}ta non ${this.lagmon}ta lagmon ${this.cola}ta cola mavjud`
+//     );
+//   }
+// }
+
+// const shop = new Shop(5, 6, 7);
+// console.log(shop);
+// console.log(shop.Sotish(3));
+// console.log(shop.Qabul(2));
+// shop.Qoldiq();
+
+console.log("C TASK"); // D-TASK
+function checkContent(a, b) {
+  return a.split("").sort().join("") === b.split("").sort().join("");
 }
 
-const shop = new Shop(5, 6, 7);
-console.log(shop);
-console.log(shop.Sotish(3));
-console.log(shop.Qabul(2));
-shop.Qoldiq();
-
+console.log(checkContent("mitgroup", "gmtiprou"));
+console.log(checkContent("apple", "lappa"));
 // CALL BACK
 // console.log("Jack Ma maslahatlari");
 // const list = [
