@@ -16,9 +16,9 @@ mongodb.connect(
     else {
       console.log("MongoDB connection succed");
       module.exports = client;
-      const app = require("./app"); 
+      const app = require("./app");
       const server = http.createServer(app);
-      let PORT = 3000;
+      let PORT = 5012;
       server.listen(PORT, function () {
         console.log(
           `The sever ins running succesfful on port: ${PORT}, http://localhost:${PORT}`
