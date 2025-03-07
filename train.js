@@ -52,13 +52,21 @@
 // console.log(shop.Qabul(2));
 // shop.Qoldiq();
 
-console.log("C TASK"); // D-TASK
-function checkContent(a, b) {
-  return [...a].sort().join("") === [...b].sort().join("");
+// console.log("C TASK"); // D-TASK
+// function checkContent(a, b) {
+//   return [...a].sort().join("") === [...b].sort().join("");
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("apple", "lappa"));
+
+console.log("E TASK"); // E-TASK
+function getReverse(a) {
+  return [...a].reverse().join("");
 }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
-console.log(checkContent("apple", "lappa"));
+console.log(getReverse("apple"));
+
 // CALL BACK
 // console.log("Jack Ma maslahatlari");
 // const list = [
