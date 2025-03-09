@@ -60,12 +60,21 @@
 // console.log(checkContent("mitgroup", "gmtiprou"));
 // console.log(checkContent("apple", "lappa"));
 
-console.log("E TASK"); // E-TASK
-function getReverse(a) {
-  return [...a].reverse().join("");
+// console.log("E TASK"); // E-TASK
+// function getReverse(a) {
+//   return [...a].reverse().join("");
+// }
+
+// console.log(getReverse("apple"));
+
+console.log("F TASK");
+function findDoublers(a) {
+  return [...a].some((ele, index, doubl) => doubl.indexOf(ele) !== index);
 }
 
-console.log(getReverse("apple"));
+console.log(findDoublers("hello"));
+console.log(findDoublers("javohir"));
+
 
 // CALL BACK
 // console.log("Jack Ma maslahatlari");
